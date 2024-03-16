@@ -1,0 +1,44 @@
+@prefix glo: <https://w3id.org/CA-ODE4HERA/Glossary#> .
+@prefix bibd: <https://w3id.org/CA-ODE4HERA/BibliographyData#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ontology tag: Bibliography
+
+<https://w3id.org/CA-ODE4HERA/Glossary> a owl:Ontology ;
+    rdfs:label "ODE4HERA Glossary Ontology" ;
+    dct:creator "Francesco Torrigiani <francesco.torrigiani@dlr.de>" ;
+    dct:date "2020-03-15" ;
+    rdfs:comment """Collection of terms used in the ODE4HERA project""" ;
+    owl:versionInfo "0.1" .
+
+#################################################################
+# Classes
+#################################################################
+glo:Term a owl:Class ;
+         rdfs:label "Term"@en ;
+         rdfs:comment "Base class for all Terms"@en .
+
+glo:MBSEmethodology a owl:Class ;
+                    rdfs:label "MBSE Methodologies"@en ;
+                    rdfs:comment """A collection of related MBSE processes, methods, and tools. A methodology is
+                    essentially a “recipe” and can be thought of as the application of related processes, methods, and
+                    tools to a class of problems that all have something in common.""" ;
+                    dct:references bibd:Martin2020 ;
+                    rdfs:subClassOf glo:Term .
+
+glo:Process a owl:Class ;
+            rdfs:label "Process"@en ;
+            rdfs:comment """ A Process (P) is a logical sequence of tasks performed to achieve a particular objective.
+            A process defines “WHAT” is to be done, without specifying “HOW” each task is performed. The structure of a
+            process provides several levels of aggregation to allow analysis and definition to be done at various levels
+            of detail to support different decision-making needs.""" ;
+            dct:references bibd:Martin2020 ;
+            rdfs:subClassOf glo:Term .
+
+#################################################################
+# Annotation Properties
+#################################################################
+dct:references a owl:AnnotationProperty .
