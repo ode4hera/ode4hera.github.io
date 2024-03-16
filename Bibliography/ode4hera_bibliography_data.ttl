@@ -1,0 +1,27 @@
+@prefix : <https://w3id.org/CA-ODE4HERA/BibliographyData#> .
+@prefix bib: <https://w3id.org/CA-ODE4HERA/Bibliography#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/CA-ODE4HERA/BibliographyData> a owl:Ontology ;
+    rdfs:label "Bibliography Database" ;
+    dct:creator "Francesco Torrigiani" ;
+    dct:date "2020-03-15" ;
+    rdfs:comment """Individuals of <https://w3id.org/CA-ODE4HERA/Bibliography> Classes""" ;
+    owl:versionInfo "0.1" ;
+    owl:imports <https://w3id.org/CA-ODE4HERA/Bibliography> .
+
+#################################################################
+# Individuals
+#################################################################
+:Martin2020 a bib:Book;
+    bib:hasAuthor "Martin, James N.";
+    bib:hasTitle "Systems Engineering Guidebook: A Process for Developing Systems and Products";
+    bib:hasYear 2020 ;
+    bib:hasPublisher "CRC Press";
+    bib:hasMonth "April";
+    bib:hasISBN "9780138737443";
+    bib:hasDOI "10.1201/9780138737443".
+
