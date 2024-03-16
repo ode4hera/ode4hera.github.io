@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dct="http://purl.org/dc/terms/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/CA-ODE4HERA/Glossary">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label>ODE4HERA Glossary Ontology</rdfs:label>
+    <dct:creator>Francesco Torrigiani &lt;francesco.torrigiani@dlr.de&gt;</dct:creator>
+    <dct:date>2024-03-16</dct:date>
+    <rdfs:comment>Collection of terms used in the ODE4HERA project</rdfs:comment>
+    <owl:versionInfo>0.1</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/references">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/CA-ODE4HERA/Glossary#MBSEmethodology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">MBSE Methodologies</rdfs:label>
+    <dct:references rdf:resource="https://w3id.org/CA-ODE4HERA/BibliographyData#Martin2020"/>
+    <rdfs:comment>A collection of related MBSE processes, methods, and tools. A methodology is
+                    essentially a “recipe” and can be thought of as the application of related processes, methods, and
+                    tools to a class of problems that all have something in common.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/CA-ODE4HERA/Glossary#Term"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/CA-ODE4HERA/Glossary#Term">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Term</rdfs:label>
+    <rdfs:comment xml:lang="en">Base class for all Terms</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/CA-ODE4HERA/Glossary#Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">Process</rdfs:label>
+    <dct:references rdf:resource="https://w3id.org/CA-ODE4HERA/BibliographyData#Martin2020"/>
+    <rdfs:comment> A Process (P) is a logical sequence of tasks performed to achieve a particular objective.
+            A process defines “WHAT” is to be done, without specifying “HOW” each task is performed. The structure of a
+            process provides several levels of aggregation to allow analysis and definition to be done at various levels
+            of detail to support different decision-making needs.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/CA-ODE4HERA/Glossary#Term"/>
+  </rdf:Description>
+</rdf:RDF>
